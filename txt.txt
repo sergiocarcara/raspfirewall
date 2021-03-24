@@ -1,5 +1,12 @@
+<<<<<<< Updated upstream
 
 depois de alterar e testar o código
 git add .
 git commit -m 'o que vc alterou'
+=======
+
+depois de alterar e testar o código
+git add .
+git commit -m 'o que vc alterou'
+>>>>>>> Stashed changes
 git push heroku master

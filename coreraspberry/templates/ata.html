@@ -1,0 +1,49 @@
+{% extends "base/base.html" %}
+
+{% block titulo %}ATA{% endblock %}
+
+
+{% block menu %}
+    {% include 'base/nave_base.html' %}
+
+{% endblock %}
+
+
+{% block conteudo %}
+{% load staticfiles %}
+{% include 'include/modal.html' %}
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+<!--   Icon Section   --><br><br>
+<h2 class="header">ATA DE REUNIÕES</h2><hr style="border-bottom:2px solid blue"><br><br>
+
+  <ul class="collapsible" data-collapsible="accordion">
+    {% for poster in atas %}
+      <li>
+        <div class="collapsible-header"><i class="material-icons">library_books</i>Data: {{poster.data_criacao}}</div>
+        <div class="collapsible-body"><span>{{poster.texto|safe}}</span></div>
+      </li>
+    {% endfor %}
+  </ul><br><br><br>
+        
+
+<!--fim do conteudo-->
+
+    <blockquote>
+      <h6>A Pesquisa e o melhor conteudo para desenvolver um bom projeto.</h6><br>
+      </blockquote>
+    </div><!--section-->
+    <br><br>
+  </div><!--container-->
+
+{% endblock %}
+
+{% block rodape %}
+    {% include 'base/footer.html' %}
+
+{% endblock %}</html>

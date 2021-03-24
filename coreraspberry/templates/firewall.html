@@ -1,0 +1,119 @@
+{% extends "base/base.html" %}
+
+{% block titulo %}FIREWALL{% endblock %}
+
+
+{% block menu %}
+    {% include 'base/nave_base_farewall.html' %}
+
+{% endblock %}
+
+
+{% block conteudo %}
+{% load staticfiles %}
+{% include 'include/modal.html' %}
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+<!--   Icon Section   -->
+<h4 class="header">O QUE É FIREWALL</h4><hr style="border-bottom:2px solid blue">
+
+<p><h5>A palavra firewall tem estado cada vez mais comum no nosso cotidiano, ainda mais 
+agora que a segurança digital está dia após dia mais em evidência. Você certamente 
+já deve estar familiarizada com ela, mas sabe o que é o firewall ou o que ele faz?
+Continue acompanhando este artigo e descubra.</h5></p><br><br>
+
+<h5 class="header"><span style="background: #1abc9c; border-radius:5px; padding:5px">PAREDE DE FOGO</span></h5>
+
+<p><h5>Assim como a metáfora por trás do nome sugere, firewall é uma barreira de 
+proteção que ajuda a bloquear o acesso de conteúdo malicioso, mas sem impedir que 
+os dados que precisam transitar continuem fluindo. Em inglês, “firewall” é o nome 
+daquelas portas antichamas usadas nas passagens para as escadarias em prédios.</h5></p><br><br>
+
+<center>
+<div class="card-image">
+  <img src="{% static 'img/parede.jpg' %}">
+  <span class="card-title">(Fonte da imagem: <a href="https://www.iconfinder.com/" >Icon Archive</a>)</span>
+</div>
+</center><br>
+
+<p><h5>Na informática, os firewalls são aplicativos ou equipamentos que ficam entre um link de comunicação 
+e um computador, checando e filtrando todo o fluxo de dados. Esse tipo de solução serve tanto para aplicações 
+empresariais quanto para domiciliar, protegendo não só a integridade dos dados na rede mas também a
+confidencialidade deles.</h5></p><br><br><br><br>
+
+<h5 class="header"><span style="background: #1abc9c; border-radius:5px; padding:5px">FIREWALL EM FORMA DE SOFTWARES</span></h5>
+
+<p><h5>Aplicações com a função de firewall já são parte integrante de qualquer sistema operacional moderno, 
+garantindo a segurança do seu PC desde o momento em que ele é ligado pela primeira vez. Os firewalls trabalham
+usando regras de segurança, fazendo com que pacotes de dados que estejam dentro das regras sejam aprovados, 
+enquanto todos os outros nunca chegam ao destino final.</h5></p><br><br>
+
+<center>
+<div class="card-image">
+  <img src="{% static 'img/firewall_art.jpg' %}">
+</div>
+<span class="card-title">(Fonte da imagem: <a href="https://www.tecmundo.com.br/firewall/182-o-que-e-firewall-.htm" >TECMUNDO</a>)</span>
+</center><br>
+
+<p><h5>Além do firewall presente em cada máquina, é bastante comum empresas usarem computadores específicos que agem 
+como um “guardião” de uma rede, filtrando todo o trânsito de dados entre os PCs locais e um ambiente mais hostil, 
+como a internet. Usando essa segunda opção, é possível até aplicar regras exclusivas como: “Máquina X pode enviar 
+arquivos por FTP à vontade, todas as outras estão limitadas apenas a downloads”.</h5></p><br><br>
+
+<p><h5>Vale lembrar que, em ambos os casos, todas essas regras podem ser personalizadas à vontade, 
+permitindo que o protocolo de segurança seja modificado de acordo com as suas necessidades. No Windows 7,
+você pode checar as configurações do firewall entrando em <i><b>Painel de Controle > Sistema e Segurança > Firewall do Windows</b></i>.</h5></p><br><br>
+
+<center>
+<div class="card-image">
+  <img src="{% static 'img/telaWindows.jpg' %}">
+</div>
+<span class="card-title">Painel de controle do firewall do Windows (Fonte da imagem: <a href="https://www.tecmundo.com.br/firewall/182-o-que-e-firewall-.htm" >TECMUNDO</a>)</span>
+</center><br>
+
+<p><h5>Outra medida muito usada são os filtros por portas e aplicativos. Com eles, o firewall pode determinar,
+exatamente, quais programas do seu computador podem ter acesso ao link de internet ou não. As portas de 
+comunicação também podem ser controladas da mesma forma, permitindo que as portas mais “visadas” pelos malware 
+sejam bloqueadas terminantemente.</h5></p><br><br><br><br>
+
+<h5 class="header"><span style="background: #1abc9c; border-radius:5px; padding:5px">FIREWALL COMO HARDWARE</span></h5>
+
+<p><h5>Os firewalls em forma de hardware são equipamentos específicos para este fim e são mais comumente usados
+em aplicações empresariais. A vantagem de usar equipamentos desse tipo é que o hardware é dedicado em vez de 
+compartilhar recursos com outros aplicativos. Dessa forma, o firewall pode ser capaz de tratar mais requisições
+e aplicar os filtros de maneira mais ágil.</h5></p><br><br>
+
+<center>
+<div class="card-image">
+  <img src="{% static 'img/haker.jpg' %}">
+</div>
+<span class="card-title">Equipamentos de firewall empresariais (Fonte da imagem: <a href="http://www.ehow.com/" > Reprodução/eHow</a>)</span>
+</center><br>
+
+<p><h5>Boa parte dos roteadores de rede domiciliar disponíveis hoje também conta com algum tipo de aplicação de firewall. 
+Uma das mais básicas é o controle sobre os computadores que estejam habilitados a se conectar na rede, impedindo que
+as “sanguessugas” de plantão usem a sua Wi-Fi sem permissão. Você pode aprender mais sobre a segurança de redes sem 
+fio com <a href="https://www.tecmundo.com.br/seguranca/1448-nao-deixe-que-os-vizinhos-roubem-sua-conexao-wireless-sem-a-devida-permissao.htm"><i>este artigo</i></a> do Tecmundo.</h5></p><br><br>
+
+<span class="card-title">(Fonte: <a href="https://www.tecmundo.com.br/firewall/182-o-que-e-firewall-.htm" >TECMUNDO</a>)</span><br><br><br><br>
+
+<!--fim do conteudo-->
+
+    <blockquote>
+      <h6>A Pesquisa e o melhor conteudo para desenvolver um bom projeto.</h6><br>
+      </blockquote>
+    </div><!--section-->
+    <br><br>
+  </div><!--container-->
+
+{% endblock %}
+
+{% block rodape %}
+    {% include 'base/footer.html' %}
+
+{% endblock %}</html>

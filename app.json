@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "name": "Start on Heroku: Python raspberry",
   "description": "A barebones Python app, which can easily be deployed to Heroku.",
@@ -14,3 +15,21 @@
     }
   }
 }
+=======
+{
+  "name": "Start on Heroku: Python raspberry",
+  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "image": "heroku/python",
+  "repository": "https://github.com/heroku/python-getting-started",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
+>>>>>>> Stashed changes

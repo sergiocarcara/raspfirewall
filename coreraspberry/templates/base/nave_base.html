@@ -1,0 +1,42 @@
+{% load static from staticfiles %}
+{% include 'include/mode_edit.html' %}
+
+<!--logo da página-->
+{% include 'include/logo.html' %}
+
+<nav class="light-#c2185b pink darken-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><i class="material-icons">home</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light  modal-trigger" href="#modalRasp">O QUE É RASPBERRY - PI</a></li>
+        <li ><a href="/firewall/">O QUE É FIREWALL</a></li>
+        <li><a href="/projetos/">PROJETO</a></li>
+        <li><a href="/desenvol/">DESENVOLVEDORES</a></li>
+        <li ><a href="/contato/">CONTATOS</a></li>
+        
+        <!-- Dropdown Trigger -->
+        {% include 'include/dropdow.html' %}
+        
+      </ul>
+      
+      <!--menu para mobile-->
+      <ul id="nav-mobile" class="side-nav"><br>
+        <center><img src="{% static 'img/logo/simbol.PNG' %}" width="43" height="48"></center>
+        <li><a href="/"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect waves-light  modal-trigger" href="#modalRasp">O QUE É RASPBERRY - PI</a></li>
+        <li ><a href="/firewall/">O QUE É FIREWALL</a></li>
+        <li><a href="/projetos/">PROJETO</a></li>
+        <li><a href="/desenvol/">DESENVOLVEDORES</a></li>
+        <li ><a href="/contato/">CONTATOS</a></li>
+        <li class="divider"></li>
+        <li><a href="/ata/"><i class="material-icons">local_library</i>ATA</a></li>
+        <li><a href="/reuniao/"><i class="material-icons">group</i>REUNIÃO</a></li>
+        <li><a href="/galeriaFotos/"><i class="material-icons">add_a_photo</i>GALERIA DE FOTOS</a></li>
+        <li><a href="/admin/"><i class="material-icons">supervisor_account</i>ADMIN</a></li>
+        <li class="divider"></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      
+    </div>
+  </nav>
+  <center>{% include 'include/data_hora.html' %}</center>
+

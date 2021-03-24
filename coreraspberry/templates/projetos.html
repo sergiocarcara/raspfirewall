@@ -1,0 +1,55 @@
+{% extends "base/base.html" %}
+
+{% block titulo %}PROJETOS{% endblock %}
+
+
+{% block menu %}
+    {% include 'base/nave_base_projeto.html' %}
+
+{% endblock %}
+
+
+{% block conteudo %}
+{% load staticfiles %}
+{% include 'include/modal.html' %}
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+<!--   Icon Section   -->
+<h2 class="header">Projetos</h2><hr style="border-bottom:2px solid blue">
+
+<ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+         
+
+<!--fim do conteudo-->
+
+    <blockquote>
+      <h6>A Pesquisa e o melhor conteudo para desenvolver um bom projeto.</h6><br>
+      </blockquote>
+    </div><!--section-->
+    <br><br>
+  </div><!--container-->
+
+{% endblock %}
+
+{% block rodape %}
+    {% include 'base/footer.html' %}
+
+{% endblock %}</html>

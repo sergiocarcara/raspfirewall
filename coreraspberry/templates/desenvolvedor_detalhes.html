@@ -1,0 +1,56 @@
+{% extends "base/base.html" %}
+
+{% block titulo %}DESENVOLVEDRO - DETALHE{% endblock %}
+
+
+{% block menu %}
+    {% include 'base/nave_base_desenvolvedor.html' %}
+
+{% endblock %}
+
+
+{% block conteudo %}
+{% load staticfiles %}
+{% include 'include/modal.html' %}
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+<!--   Icon Section   -->
+<h4 class="header">{{detalhes.nome}} - {{detalhes.tipo}}</h4><hr style="border-bottom:2px solid blue">
+
+
+  <div id="flow-text" class="card-panel">
+     <img class="materialboxed"src="{{detalhes.imagem.url}}">
+  <p class="flow">
+  <b>NOME:</b> {{detalhes.segundonome}}
+  </p>
+  <p class="flow">
+   <b>IDADE:</b> {{detalhes.idade}} ANOS
+  </p>
+  <p class="flow">
+    <b>FORMAÇÃO:</b> {{detalhes.textocompleto|safe}}
+  </p>
+  <div class="card-action">
+    <a href="#">Currículo Lattes</a>
+  </div>
+  </div>
+
+<!--fim do conteudo-->
+
+    <blockquote>
+      <h6>A Pesquisa e o melhor conteudo para desenvolver um bom projeto.</h6><br>
+      </blockquote>
+    </div><!--section-->
+    <br><br>
+  </div><!--container-->
+
+{% endblock %}
+
+{% block rodape %}
+    {% include 'base/footer.html' %}
+
+{% endblock %}</html>
