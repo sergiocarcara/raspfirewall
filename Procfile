@@ -1,5 +1,2 @@
-<<<<<<< Updated upstream
-web: gunicorn raspberry.wsgi --log-file -
-=======
-web: gunicorn raspberry.wsgi --log-file -
->>>>>>> Stashed changes
+release: python3 manage.py migrate
+web: gunicorn raspberry.wsgi --preload --log-file-
